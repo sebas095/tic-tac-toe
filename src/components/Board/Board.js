@@ -6,7 +6,7 @@ const BoardRow = ({ children }) => <div className="board-row">{children}</div>;
 
 export class Board extends Component {
   createBoard() {
-    const { isWinner } = this.props;
+    const { isWinner, squares, onClick } = this.props;
 
     let board = [];
     for (let row = 0; row < 3; row++) {
@@ -16,8 +16,8 @@ export class Board extends Component {
         rows.push(
           <Square
             key={row * 3 + col}
-            value={this.props.squares[index]}
-            onClick={() => this.props.onClick(index)}
+            value={squares[index]}
+            onClick={() => onClick(index)}
             className={isWinner.includes(index) ? " isWinner" : ""}
           />
         );
