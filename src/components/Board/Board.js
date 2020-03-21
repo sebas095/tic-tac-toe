@@ -15,7 +15,7 @@ export class Board extends Component {
         const index = row * 3 + col;
         rows.push(
           <Square
-            key={row * 3 + col}
+            key={index}
             value={squares[index]}
             onClick={() => onClick(index)}
             className={isWinner.includes(index) ? " isWinner" : ""}
