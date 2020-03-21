@@ -1,7 +1,7 @@
 .game {
   display: flex;
   flex-direction: row;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .game-info {
@@ -9,7 +9,7 @@
 }
 
 .btn-history {
-  width: 150px;
+  width: 250px;
   height: 25px;
   border-radius: 20px;
   margin: 5px 0 5px 0;
@@ -21,4 +21,24 @@
 
 .btn-history:hover {
   background-color: cadetblue;
+}
+
+.active {
+  background-color: whitesmoke;
+}
+
+.react-switch {
+  margin-top: 10px;
+}
+
+.game-reverse {
+  position: relative;
+  bottom: 10px;
+}
+
+@media (max-width: 767.98px) {
+  .btn-history {
+    width: 150px;
+    height: 35px;
+  }
 }
